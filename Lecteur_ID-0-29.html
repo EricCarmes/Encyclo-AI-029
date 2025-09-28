@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Smartbook - AudioBook</title>
+  <link rel="stylesheet" href="plyr.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <img src="ID-0-29-Couverture.jpg" alt="Couverture" style="width: 20%; height: auto; margin-bottom: 20px;">
+
+  <div class="logos">
+    <img src="PLANCHE-1a.jpg" alt="Logo AudioBook" style="width: 5%; height: auto; margin-bottom: 20px;">
+    <img src="Logo_resized.jpg" alt="Logo Encyclo-AI" style="width: 10%; height: auto; margin-bottom: 20px;">
+  </div>
+
+<!-- Bloc bouton Play + potentiomètre vitesse -->
+<div class="player-controls">
+  <!-- Gros bouton Play -->
+  <button id="bigPlayBtn" aria-label="Lire ou mettre en pause le livre audio">▶</button>
+
+  <!-- Bloc vitesse -->
+  <div id="speedControl">
+    <div class="speed-label">Vitesse</div>
+    <div class="speed-knob-wrapper">
+      <input type="range" id="speedKnob" min="0.9" max="1.1" step="0.05" value="1" orient="vertical">
+
+      <!-- Colonne repères alignés -->
+      <div id="speedLabels">
+        <span>++</span>
+        <span>+</span>
+        <span>=</span>
+        <span>-</span>
+        <span>--</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!-- Lecteur audio -->
+  <audio id="audioPlayer" controls></audio>
+
+  <!-- Playlist -->
+  <ul id="playlist">
+    <li><a href="Introduction.mp3" style="font-weight: bold;">INTRODUCTION - UN VOYAGE AU CŒUR DE LA PREMIÈRE CROISADE</a></li>
+
+    <li style="font-weight: bold;">Chapitre 1 - CONTEXTE HISTORIQUE ET RELIGIEUX DE LA FIN DU XIE SIÈCLE</li>
+    <ul>
+      <li><a href="Chapitre1-1.mp3">1.1 - Les tensions entre l'Occident chrétien et le monde musulman</a></li>
+      <li><a href="Chapitre1-2.mp3">1.2 - L'Empire byzantin face à la menace seldjoukide</a></li>
+      <li><a href="Chapitre1-3.mp3">1.3 - Les motivations religieuses et politiques en Europe</a></li>
+    </ul>
+
+    <li style="font-weight: bold;">Chapitre 2 - L'APPEL À LA CROISADE : URBAIN II ET LE CONCILE DE CLERMONT</li>
+    <ul>
+      <li><a href="Chapitre2-1.mp3">2.1 - Le rôle du pape Urbain II</a></li>
+      <li><a href="Chapitre2-2.mp3">2.2 - Le concile de Clermont et son message</a></li>
+      <li><a href="Chapitre2-3.mp3">2.3 - La réception de l'appel en Europe</a></li>
+    </ul>
+
+    <li style="font-weight: bold;">Chapitre 3 - LE PARCOURS DES CROISÉS : RASSEMBLEMENT ET VOYAGE VERS L'ORIENT</li>
+    <ul>
+      <li><a href="Chapitre3-1.mp3">3.1 - Les préparatifs en Occident</a></li>
+      <li><a href="Chapitre3-2.mp3">3.2 - Les défis du voyage</a></li>
+      <li><a href="Chapitre3-3.mp3">3.3 - Les premières confrontations</a></li>
+    </ul>
+
+    <li style="font-weight: bold;">Chapitre 4 - LES BATAILLES DÉCISIVES : SIÈGE D'ANTIOCHE ET PRISE DE JÉRUSALEM</li>
+    <ul>
+      <li><a href="Chapitre4-1.mp3">4.1 - Le siège d'Antioche</a></li>
+      <li><a href="Chapitre4-2.mp3">4.2 - La prise de Jérusalem</a></li>
+      <li><a href="Chapitre4-3.mp3">4.3 - Les conséquences immédiates des victoires</a></li>
+    </ul>
+
+    <li style="font-weight: bold;">Chapitre 5 - FIGURES EMBLÉMATIQUES : GODEFROY DE BOUILLON ET SES CONTEMPORAINS</li>
+    <ul>
+      <li><a href="Chapitre5-1.mp3">5.1 - Godefroy de Bouillon, défenseur du Saint-Sépulcre</a></li>
+      <li><a href="Chapitre5-2.mp3">5.2 - Les autres leaders de la croisade</a></li>
+      <li><a href="Chapitre5-3.mp3">5.3 - Les motivations et les actions des croisés ordinaires</a></li>
+    </ul>
+
+    <li style="font-weight: bold;">Chapitre 6 - CONSÉQUENCES RELIGIEUSES : TENSIONS ENTRE CHRÉTIENS ET MUSULMANS</li>
+    <ul>
+      <li><a href="Chapitre6-1.mp3">6.1 - L'intensification des conflits interconfessionnels</a></li>
+      <li><a href="Chapitre6-2.mp3">6.2 - Les relations entre l'Occident et l'Église byzantine</a></li>
+      <li><a href="Chapitre6-3.mp3">6.3 - L'impact sur les mentalités religieuses en Europe</a></li>
+    </ul>
+
+    <li style="font-weight: bold;">Chapitre 7 - CONSÉQUENCES POLITIQUES : NAISSANCE DES ÉTATS LATINS D'ORIENT</li>
+    <ul>
+      <li><a href="Chapitre7-1.mp3">7.1 - La création du royaume latin de Jérusalem</a></li>
+      <li><a href="Chapitre7-2.mp3">7.2 - Les autres États latins : Édesse, Antioche et Tripoli</a></li>
+      <li><a href="Chapitre7-3.mp3">7.3 - Les dynamiques politiques et économiques dans la région</a></li>
+    </ul>
+
+    <li style="font-weight: bold;">Chapitre 8 - HÉRITAGE DE LA PREMIÈRE CROISADE : IMPACT SUR L'IDENTITÉ CHRÉTIENNE</li>
+    <ul>
+      <li><a href="Chapitre8-1.mp3">8.1 - La construction de l'idée de guerre sainte</a></li>
+      <li><a href="Chapitre8-2.mp3">8.2 - L'influence sur la culture et la littérature médiévales</a></li>
+      <li><a href="Chapitre8-3.mp3">8.3 - Les échos contemporains de la Première Croisade</a></li>
+    </ul>
+
+    <li><a href="Conclusion.mp3" style="font-weight: bold;">CONCLUSION - L'HÉRITAGE DURABLE DE LA PREMIÈRE CROISADE</a></li>
+  </ul>
+
+  <p><a href="ID-0-29-Annexes.pdf" target="_blank">📄 Consulter les annexes du livre</a></p>
+  <p><a href="mentions_legales.pdf">Mentions légales</a></p>
+
+  <script src="plyr.polyfilled.js"></script>
+  <script src="lecteur.js"></script>
+</body>
+</html>
